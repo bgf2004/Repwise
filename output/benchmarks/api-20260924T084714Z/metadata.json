@@ -1,0 +1,40 @@
+{
+  "started_utc": "20260924T084714Z",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "logical_cpu_count": 16,
+  "sqlite": "3.53.1",
+  "libraries": {
+    "fastapi": "0.141.1",
+    "uvicorn": "0.53.0",
+    "httpx": "0.28.1",
+    "pydantic": "2.13.5"
+  },
+  "source_sha256": {
+    "backend\\__init__.py": "73e40840aca28ce26964cf6d64241f69ca7cca219204e68b65b1b7024072cab4",
+    "backend\\app.py": "03105aa349006215ddd1d55ee64afb99dc2269287f9b9ffff8282d880ff5d2c5",
+    "backend\\models.py": "1295c3e6b7c4d773a7c75baefad178588324a3f6f5124ea052cd8db8fbd8ff2c",
+    "backend\\recommendation.py": "ee8657674b993cb44eb1193bbe64861a85fda577f58c343edb4625750b861bc3",
+    "backend\\repository.py": "91a6d7d379f919649605bacff28c646ff4126bc8ef2e06382786859ad1eb37ae",
+    "scripts/benchmark_api.py": "a8deed6ec6541eff34cc64ff33ac28f591652bad525d3f88cdbc2846c4e3929b"
+  },
+  "options": {
+    "sets": [
+      1000,
+      10000
+    ],
+    "repeats": 100,
+    "read_repeats": 30,
+    "port": 8767
+  },
+  "scope": "Single persistent HTTP client, sequential loopback requests, warm OS/database cache; no concurrent users, camera inference, rendering, or real workout validation.",
+  "timer": "perf_counter_ns around fully buffered httpx request; includes server validation/SQLite/serialization/HTTP; excludes client JSON parsing and correctness checks",
+  "p95_definition": "nearest rank: sorted measurements[ceil(0.95*n)-1]",
+  "warmups": {
+    "history_get": 3,
+    "recommendation_get": 10,
+    "set_post": 10
+  },
+  "order": "Read and recommendation timings precede save measurements, keeping initial record counts exact."
+}

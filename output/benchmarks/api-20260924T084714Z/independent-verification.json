@@ -1,0 +1,49 @@
+{
+  "independent_recalculation": "passed",
+  "source_hashes_unchanged": true,
+  "sqlite_integrity_and_foreign_keys": "passed",
+  "checks": [
+    {
+      "seed_sets": 1000,
+      "operation": "history_get",
+      "samples_verified": 30,
+      "median_ms": 129.38864999999998,
+      "p95_ms": 160.8056
+    },
+    {
+      "seed_sets": 1000,
+      "operation": "recommendation_get",
+      "samples_verified": 100,
+      "median_ms": 45.841750000000005,
+      "p95_ms": 64.6676
+    },
+    {
+      "seed_sets": 1000,
+      "operation": "set_post",
+      "samples_verified": 100,
+      "median_ms": 9.123000000000001,
+      "p95_ms": 10.7924
+    },
+    {
+      "seed_sets": 10000,
+      "operation": "history_get",
+      "samples_verified": 30,
+      "median_ms": 1332.6585,
+      "p95_ms": 1390.2194
+    },
+    {
+      "seed_sets": 10000,
+      "operation": "recommendation_get",
+      "samples_verified": 100,
+      "median_ms": 563.2239500000001,
+      "p95_ms": 710.2258
+    },
+    {
+      "seed_sets": 10000,
+      "operation": "set_post",
+      "samples_verified": 100,
+      "median_ms": 10.96595,
+      "p95_ms": 15.7962
+    }
+  ]
+}

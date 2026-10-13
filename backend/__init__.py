@@ -1,0 +1,1 @@
+"""Repwise local workout service."""

@@ -1,0 +1,8 @@
+{
+  "sets": 10000,
+  "workouts": 1000,
+  "fixture_validation_passed": 10000,
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "seed_method": "parameterized bulk INSERT, Pydantic validation and repository audit"
+}

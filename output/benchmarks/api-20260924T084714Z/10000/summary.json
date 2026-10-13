@@ -1,0 +1,44 @@
+{
+  "seed": {
+    "sets": 10000,
+    "workouts": 1000,
+    "fixture_validation_passed": 10000,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "seed_method": "parameterized bulk INSERT, Pydantic validation and repository audit"
+  },
+  "metrics": {
+    "history_get": {
+      "requests": 30,
+      "passed_checks": 30,
+      "median_ms": 1332.6585,
+      "p95_ms": 1390.2194,
+      "min_ms": 1306.4019,
+      "max_ms": 1409.6596,
+      "median_response_bytes": 13168115.0
+    },
+    "recommendation_get": {
+      "requests": 100,
+      "passed_checks": 100,
+      "median_ms": 563.2239500000001,
+      "p95_ms": 710.2258,
+      "min_ms": 447.3752,
+      "max_ms": 796.9745,
+      "median_response_bytes": 724.0
+    },
+    "set_post": {
+      "requests": 100,
+      "passed_checks": 100,
+      "median_ms": 10.96595,
+      "p95_ms": 15.7962,
+      "min_ms": 9.1229,
+      "max_ms": 18.067,
+      "median_response_bytes": 1378.0
+    }
+  },
+  "invariants": {
+    "idempotent_retries_passed": 11,
+    "final_sets": 10110,
+    "recommendation_fixture_expected_seconds": 120
+  }
+}
